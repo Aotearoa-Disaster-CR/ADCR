@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <div className="">
@@ -23,7 +25,9 @@ function Home() {
             Get in touch.
           </h3>
         </div>
-        <button className="btn btn-primary text-neutral-50 w-fit">Contact Us</button>
+        <Link to="/contact" className="btn btn-primary text-neutral-50 w-fit">
+          Contact Us
+        </Link>
       </section>
     </div >
   );
