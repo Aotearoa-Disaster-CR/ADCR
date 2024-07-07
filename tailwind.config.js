@@ -8,12 +8,22 @@ export default {
   ],
 
   theme: {
-    extend: {
-      colors: {
-        'beige': '#fbf8f5',
-        'gray': '#303841',
-      },
+    colors: {
+      'gray': '#303841',
+      'beige': '#fbf8f5',
     },
+  },
+
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["light"],
+          primary: '#303841',
+          text: '#FFFFFF'
+        },
+      },
+    ],
   },
   plugins: [react(), require('daisyui'),],
 }
