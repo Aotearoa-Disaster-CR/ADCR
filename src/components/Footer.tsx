@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-gray p-16 text-white flex justify-between items-center">
+        <footer className="bg-gray p-10 text-white flex justify-between items-center">
             <img className='h-32' src='/logo-green.png' />
             <nav className='flex flex-col text-neutral-50'>
                 <Link to="/" className="hover:underline">Home</Link>
