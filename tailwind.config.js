@@ -6,8 +6,14 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'beige': '#fbf8f5',
+        'gray': '#303841',
+      },
+    },
   },
-  plugins: [react()],
+  plugins: [react(), require('daisyui'),],
 }
